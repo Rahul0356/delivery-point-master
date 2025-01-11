@@ -1,0 +1,6 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/zdummy.txt
+# server/deliverypoint-bot-k9dr-673b608529a3.json
