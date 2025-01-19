@@ -164,7 +164,7 @@ export default function FoodDetails() {
             const newFavouriteStatus = !isCurrentlyFavourite;
 
             const endpoint = newFavouriteStatus ? 'add-favourite' : 'remove-favourite';
-            const response = await axios.post(`https://delivery-point.onrender.com/customer/${endpoint}`,
+            const response = await axios.post(`https://delivery-point-master-backend.onrender.com/customer/${endpoint}`,
                 { foodId: foodId },
                 {
                     headers: {
@@ -361,7 +361,7 @@ export default function FoodDetails() {
 
                                                 </div>
                                                 <div className='flex-end my-2'>
-                                                    <img src={`https://delivery-point.onrender.com/images/${food.images}`} className='h-48 w-full rounded-lg' onClick={toggleModal} />
+                                                    <img src={`https://delivery-point-master-backend.onrender.com/images/${food.images}`} className='h-48 w-full rounded-lg' onClick={toggleModal} />
 
                                                 </div>
 
