@@ -17,7 +17,7 @@ export default function OrderDetails() {
     const { orderId } = useParams();
     const fetchOrderDetails = async () => {
         try {
-            const response = await axios.get(`https://delivery-point.onrender.com/customer/order/${orderId}`, {
+            const response = await axios.get(`https://delivery-point-master-backend.onrender.com/customer/order/${orderId}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`,
