@@ -121,7 +121,7 @@ export default function PaymentSections() {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`,
             };
-            const response = await fetch(`https://delivery-point.onrender.com/customer/create-checkout-session`, {
+            const response = await fetch(`https://delivery-point-master-backend.onrender.com/customer/create-checkout-session`, {
                 method: 'POST',
                 headers: headers,
                 body: JSON.stringify(body),
