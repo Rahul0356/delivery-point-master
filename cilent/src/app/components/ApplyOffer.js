@@ -12,7 +12,7 @@ export default function ApplyOffer({ isOfferModelOpen, toggleOfferModal,handleAp
     try {
       const token = localStorage.getItem('token');
       const response = await axios.get(
-        `https://delivery-point.onrender.com/customer/offer/verify/${offerId}`,
+        `https://delivery-point-master-backend.onrender.com/customer/offer/verify/${offerId}`,
         {
           headers: {
             'Content-Type': 'application/json',
