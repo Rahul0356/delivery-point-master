@@ -55,7 +55,7 @@ const CartPage = () => {
         _id: cart._id,
         unit: totalQuantity,
       }]
-        const response = await axios.post("https://delivery-point.onrender.com/create-order", payload, {
+        const response = await axios.post("https://delivery-point-master-backend.onrender.com", payload, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`, // Note the space after 'Bearer'
