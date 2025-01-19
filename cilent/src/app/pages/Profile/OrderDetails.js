@@ -119,7 +119,7 @@ export default function OrderDetails() {
                             {orderDetails.items && orderDetails.items.map((item, index) => (
                                 <div className='border-gray-300 border-2 pt-2 rounded-lg'>
                                     <div className="px-2 flex items-center mb-4">
-                                        <img src={`https://delivery-point.onrender.com/images/${item.food.images[0]}`} alt="product image" className="mr-4 h-16 w-16" />
+                                        <img src={`https://delivery-point-master-backend.onrender.com/images/${item.food.images[0]}`} alt="product image" className="mr-4 h-16 w-16" />
                                         <div>
                                             <p>{item.food.name}</p>
                                             <p>₹{item.food.price}</p>
