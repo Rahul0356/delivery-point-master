@@ -36,7 +36,7 @@ export default function ContactUs() {
                 message: values.message,
             };
 
-            const url = 'https://delivery-point.onrender.com/customer/contact-us';
+            const url = 'https://delivery-point-master-backend.onrender.com/customer/contact-us';
             const response = await axios.post(url, params);
             if (response.status === 200) {
                 const token = response.data.signature;
