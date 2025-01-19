@@ -23,7 +23,7 @@ export default function OtpVerify() {
     });
     const onSubmit = async (values, { setSubmitting, setErrors  }) => {
             try {
-              const response = await axios.patch('https://delivery-point.onrender.com/customer/verify', values,{
+              const response = await axios.patch('https://delivery-point-master-backend.onrender.com/customer/verify', values,{
                 headers: {
                   'Content-Type': 'application/json',
                    Authorization: `Bearer ${token}`
